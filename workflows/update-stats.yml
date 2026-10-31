@@ -1,0 +1,29 @@
+name: Update Profile Stats & Visuals
+on:
+  schedule:
+    - cron: "0 3 * * *"   # every day at 03:00 UTC
+  workflow_dispatch:       # manual run button
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch real GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USERS: ${{ vars.GH_USERS || github.repository_owner }}
+          HIDE_LANGS: ${{ vars.HIDE_LANGS }}
+        run: python tools/fetch_stats.py
+      - name: Regenerate animated SVGs
+        run: python tools/gen_assets.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json assets
+          git diff --staged --quiet || (git commit -m "chore: daily stats update [skip ci]" && git push)

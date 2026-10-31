@@ -8,6 +8,10 @@ LANGS=[('Python','38%',.38,'#3776ab'),('JavaScript','18%',.18,'#f7df1e'),('PHP',
 TROPHIES=[('Commits','SSS','#fbbf24'),('Stars','S','#a78bfa'),('Followers','A+','#22d3ee'),('Repos','AA','#34d399'),('PRs','A','#f472b6'),('Streak','S+','#fb923c')]
 ACT=[3,5,2,8,6,9,4,7,12,10,6,14,9,11,8,15,13,10,17,12,9,14,18,16,11,13,19,15,20,17]
 # -------------------------------------------------------------------
+import json, os
+BADGE='Live ✦ Demo'
+if os.path.exists('data.json'):
+    _d=json.load(open('data.json'));STATS=_d['stats'];LANGS=_d['langs'];TROPHIES=_d['trophies'];ACT=_d['activity'];BADGE='Updated '+_d['updated']
 def wr(n,W,H,body,defs=''):
     s=(f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"><defs>{defs}'
     '<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>'
@@ -83,4 +87,4 @@ def pipeline():
         b+=f'<circle cx="{x}" cy="105" r="38" fill="#0b1020" stroke="{c}" stroke-width="3" filter="url(#f)"/><circle cx="{x}" cy="105" r="38" fill="none" stroke="{c}"><animate attributeName="r" values="38;56;38" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>'
         b+=f'<text x="{x}" y="115" text-anchor="middle" font-size="30">{e}</text><text x="{x}" y="180" text-anchor="middle" {FONT} font-size="16" font-weight="700" fill="{c}">{n}</text>'
     wr('pipeline.svg',W,H,b)
-header();bars('stats.svg','GitHub Stats',STATS,'Live ✦ Demo');bars('languages.svg','Top Languages',LANGS,'Tech Mix');trophies();activity();pipeline();print('ok')
+header();bars('stats.svg','GitHub Stats',STATS,BADGE);bars('languages.svg','Top Languages',LANGS,'Tech Mix');trophies();activity();pipeline();print('ok')

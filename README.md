@@ -46,7 +46,6 @@
 
 </div>
 
-> 💡 *عدّل الأدوار والتخصصات في الجدول أعلاه لتناسب كل شخص بدقة.*
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 

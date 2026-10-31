@@ -52,22 +52,7 @@
 
 ## 🌌 01. About Us & Engineering Vision
 
-```mermaid
-graph TD
-    A[🧠 AI & Intelligence Systems] --> B[👁️ Computer Vision & ML/DL Models]
-    A --> C[⚡ Expert Systems & Autonomous Agents]
-    A --> H[💬 NLP & Generative AI]
-    D[💻 Full-Stack Architecture] --> E[🎨 Modern Frontend Systems]
-    D --> F[⚙️ High-Performance Backend & Databases]
-    D --> I[🐳 DevOps & Cloud Delivery]
-    B & C & H & E & F & I --> G[🚀 End-to-End Enterprise Solutions]
-
-    style A fill:#4c1d95,stroke:#8b5cf6,stroke-width:2px,color:#fff
-    style D fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#fff
-    style G fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
-    style H fill:#5b21b6,stroke:#a78bfa,color:#fff
-    style I fill:#1d4ed8,stroke:#60a5fa,color:#fff
-```
+<div align="center"><img src="assets/vision.svg" width="100%" alt="Engineering vision"/></div>
 
 > **"Bridging the gap between Complex Theoretical Artificial Intelligence and Robust Engineering Implementations."**
 
@@ -77,34 +62,7 @@ graph TD
 
 ### 🧭 Skills Mind Map
 
-```mermaid
-mindmap
-  root((Nibras & Dana))
-    AI & Data Science
-      Computer Vision
-      Deep Learning
-      Machine Learning
-      Multi-Agent Systems
-      Expert Systems
-    Full-Stack
-      Frontend
-        Responsive UI
-        Flutter
-        State Management
-      Backend
-        FastAPI
-        Laravel
-        Microservices
-    Databases
-      Oracle 12c PL/SQL
-      EER Modeling
-      Normalization 1NF-BCNF
-      Query Optimization
-    DevOps
-      Git & GitHub Actions
-      Docker
-      Linux & Bash
-```
+<div align="center"><img src="assets/mindmap.svg" width="100%" alt="Skills mind map"/></div>
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
@@ -121,174 +79,37 @@ mindmap
 
 ### 🔄 Machine Learning Lifecycle
 
-```mermaid
-flowchart LR
-    A[📥 Data Collection] --> B[🧹 Cleaning & EDA]
-    B --> C[🧪 Feature Engineering]
-    C --> D[🏋️ Model Training]
-    D --> E[📊 Evaluation & Tuning]
-    E -->|Underfit / Overfit| D
-    E --> F[📦 Deployment API]
-    F --> G[📡 Monitoring]
-    G -->|Data Drift| A
-
-    style A fill:#312e81,stroke:#818cf8,color:#fff
-    style D fill:#4c1d95,stroke:#a78bfa,color:#fff
-    style F fill:#065f46,stroke:#34d399,color:#fff
-```
+<div align="center"><img src="assets/ml-lifecycle.svg" width="100%" alt="ML lifecycle"/></div>
 
 ### 🤖 Multi-Agent Workflow
 
-```mermaid
-flowchart TD
-    U([👤 User Request]) --> O{🎯 Orchestrator Agent}
-    O --> R[🔎 Research Agent]
-    O --> P[🧩 Planner Agent]
-    O --> C[💻 Coder Agent]
-    R --> M[(🧠 Shared Memory / Vector DB)]
-    P --> M
-    C --> M
-    M --> V[✅ Validator Agent]
-    V -->|Rejected| O
-    V -->|Approved| OUT([📤 Final Response])
-
-    style O fill:#7c3aed,stroke:#c4b5fd,color:#fff
-    style M fill:#0e7490,stroke:#67e8f9,color:#fff
-    style OUT fill:#065f46,stroke:#34d399,color:#fff
-```
+<div align="center"><img src="assets/multi-agent.svg" width="100%" alt="Multi-agent workflow"/></div>
 
 ### 📊 Expertise Distribution
 
-```mermaid
-pie showData title Technical Focus Areas
-    "Deep Learning & Computer Vision" : 30
-    "Backend & APIs" : 25
-    "Databases & SQL" : 20
-    "Frontend & Mobile" : 15
-    "DevOps & Tooling" : 10
-```
+<div align="center"><img src="assets/focus-pie.svg" width="100%" alt="Focus areas"/></div>
 
 ### 📈 Proficiency Overview
 
-```mermaid
-xychart-beta
-    title "Skill Proficiency (%)"
-    x-axis [Python, DeepLearning, FastAPI, Laravel, Flutter, Oracle, Docker, Git]
-    y-axis "Level" 0 --> 100
-    bar [92, 88, 90, 82, 80, 88, 78, 90]
-    line [92, 88, 90, 82, 80, 88, 78, 90]
-```
+<div align="center"><img src="assets/skills-bar.svg" width="100%" alt="Skill proficiency"/></div>
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
 ## 💻 03. Full-Stack & Database Engineering Architecture
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as 👤 Client / UI
-    participant FE as 🎨 Frontend Layer
-    participant API as ⚙️ Backend API Gateway
-    participant AI as 🧠 AI / ML Model
-    participant DB as 🗄️ Relational DB Cluster
-
-    User->>FE: Interacts with Responsive UI / Dashboard
-    FE->>API: Asynchronous REST / GraphQL Request
-    API->>AI: Inference Call / Feature Data Payload
-    AI-->>API: Predictions / Structured Insights
-    API->>DB: Query / Persistence & Transaction Log
-    DB-->>API: ACID Response / Data Payload
-    API-->>FE: Renderable JSON / Real-Time WebSocket
-    FE-->>User: Interactive UI Update
-```
+<div align="center"><img src="assets/sequence.svg" width="100%" alt="Request sequence"/></div>
 
 ### 🏗️ System Architecture Overview
 
-```mermaid
-flowchart TB
-    subgraph Client["🎨 Client Layer"]
-        W[🌐 Web SPA]
-        M[📱 Flutter App]
-    end
-    subgraph Gateway["⚙️ Backend Layer"]
-        G[🚪 API Gateway + JWT/OAuth]
-        S1[FastAPI Service]
-        S2[Laravel Service]
-    end
-    subgraph Intelligence["🧠 AI Layer"]
-        ML[Inference Server]
-        VDB[(Vector Store)]
-    end
-    subgraph Data["🗄️ Data Layer"]
-        ORA[(Oracle 12c)]
-        CACHE[(Cache)]
-    end
-    W --> G
-    M --> G
-    G --> S1
-    G --> S2
-    S1 --> ML
-    ML --> VDB
-    S1 --> ORA
-    S2 --> ORA
-    S2 --> CACHE
-
-    style Client fill:#1e1b4b,stroke:#818cf8,color:#fff
-    style Gateway fill:#172554,stroke:#60a5fa,color:#fff
-    style Intelligence fill:#3b0764,stroke:#c084fc,color:#fff
-    style Data fill:#052e16,stroke:#4ade80,color:#fff
-```
+<div align="center"><img src="assets/architecture.svg" width="100%" alt="System architecture"/></div>
 
 ### 🗃️ Sample EER / Database Model
 
-```mermaid
-erDiagram
-    USER ||--o{ PROJECT : owns
-    PROJECT ||--o{ TASK : contains
-    PROJECT ||--o{ MODEL_RUN : trains
-    MODEL_RUN ||--|{ METRIC : records
-    USER {
-        int id PK
-        string name
-        string email
-    }
-    PROJECT {
-        int id PK
-        int user_id FK
-        string title
-    }
-    TASK {
-        int id PK
-        int project_id FK
-        string status
-    }
-    MODEL_RUN {
-        int id PK
-        int project_id FK
-        string algorithm
-        date trained_at
-    }
-    METRIC {
-        int id PK
-        int run_id FK
-        string name
-        float value
-    }
-```
+<div align="center"><img src="assets/er.svg" width="100%" alt="Database model"/></div>
 
 ### 🔐 Authentication State Machine
 
-```mermaid
-stateDiagram-v2
-    [*] --> Anonymous
-    Anonymous --> Authenticating: Login
-    Authenticating --> Authenticated: Valid JWT
-    Authenticating --> Anonymous: Invalid Credentials
-    Authenticated --> Refreshing: Token Expired
-    Refreshing --> Authenticated: Refresh OK
-    Refreshing --> Anonymous: Refresh Failed
-    Authenticated --> Anonymous: Logout
-```
+<div align="center"><img src="assets/auth-state.svg" width="100%" alt="Authentication states"/></div>
 
 ### 🛠️ Technology Stack Breakdown
 
@@ -317,56 +138,15 @@ stateDiagram-v2
 
 ### 🔁 CI/CD Pipeline
 
-```mermaid
-flowchart LR
-    A[💾 Git Push] --> B[🧪 Lint & Unit Tests]
-    B --> C[🐳 Docker Build]
-    C --> D[🔒 Security Scan]
-    D --> E[🚢 Deploy Staging]
-    E --> F{✅ Approved?}
-    F -->|Yes| G[🚀 Production]
-    F -->|No| A
-
-    style A fill:#1e1b4b,stroke:#818cf8,color:#fff
-    style G fill:#065f46,stroke:#34d399,color:#fff
-    style F fill:#7c2d12,stroke:#fb923c,color:#fff
-```
+<div align="center"><img src="assets/cicd.svg" width="100%" alt="CI/CD pipeline"/></div>
 
 ### 🌿 Git Branching Strategy
 
-```mermaid
-gitGraph
-    commit id: "init"
-    branch develop
-    checkout develop
-    commit id: "setup"
-    branch feature/ai-model
-    commit id: "train"
-    commit id: "optimize"
-    checkout develop
-    merge feature/ai-model
-    branch feature/ui
-    commit id: "dashboard"
-    checkout develop
-    merge feature/ui
-    checkout main
-    merge develop tag: "v1.0"
-```
+<div align="center"><img src="assets/git-graph.svg" width="100%" alt="Git branching"/></div>
 
 ### 🗓️ Roadmap
 
-```mermaid
-gantt
-    title Engineering Roadmap
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %Y
-    section AI
-    Deep Learning Models      :done,    ai1, 2025-01-01, 120d
-    Multi-Agent Systems       :active,  ai2, 2025-06-01, 150d
-    section Full-Stack
-    Microservices Platform    :active,  fs1, 2025-05-01, 140d
-    Cloud Deployment          :         fs2, 2025-10-01, 90d
-```
+<div align="center"><img src="assets/roadmap.svg" width="100%" alt="Roadmap"/></div>
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 

@@ -41,12 +41,11 @@
 | 👨‍💻 **Nibras Daboul** | 👩‍💻 **Dana Hajjar** |
 | :---: | :---: |
 | Information Technology Engineer | Information Technology Engineer |
-| AI & Intelligence Systems | AI & Intelligence Systems |
+| AI & Intelligence Systems & Experta Systems | AI & Intelligence Systems & Ritrival Systems |
 | Deep Learning • Backend • Databases | Full-Stack • Frontend • Data Science |
 
 </div>
 
-> 💡 *عدّل الأدوار والتخصصات في الجدول أعلاه لتناسب كل شخص بدقة.*
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 

@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f172a,50:1e1b4b,100:311b92&height=260&section=header&text=Nibras%20%26%20Dana&fontSize=64&fontColor=ffffff&fontAlignY=38&desc=Nibras%20Daboul%20%E2%80%A2%20Dana%20Hajjar&descSize=22&descAlignY=60&animation=twinkling" width="100%" alt="Header Banner"/>
+<img src="assets/header.svg" width="100%" alt="Header Banner"/>
 
 <!-- Robots + Typing Animation -->
 <table border="0">
@@ -28,7 +28,7 @@
   <img src="https://img.shields.io/badge/Focus-AI_%26_Full--Stack-7c3aed?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Focus"/>
 </p>
 
-<img src="https://komarev.com/ghpvc/?username=nibrasnaourasdaboul&label=Profile+Views&color=7c3aed&style=for-the-badge" alt="Profile Views"/>
+<br/><a href="https://nibrasnaourasdaboul.github.io/"><img src="https://img.shields.io/badge/🌐_Launch_Interactive_3D_Experience-7c3aed?style=for-the-badge" alt="3D"/></a><br/><br/><img src="https://komarev.com/ghpvc/?username=nibrasnaourasdaboul&label=Profile+Views&color=7c3aed&style=for-the-badge" alt="Profile Views"/>
 
 </div>
 
@@ -41,11 +41,12 @@
 | 👨‍💻 **Nibras Daboul** | 👩‍💻 **Dana Hajjar** |
 | :---: | :---: |
 | Information Technology Engineer | Information Technology Engineer |
-| AI & Intelligence Systems & Experta Systems | AI & Intelligence Systems & Ritrival Systems |
+| AI & Intelligence Systems | AI & Intelligence Systems |
 | Deep Learning • Backend • Databases | Full-Stack • Frontend • Data Science |
 
 </div>
 
+> 💡 *عدّل الأدوار والتخصصات في الجدول أعلاه لتناسب كل شخص بدقة.*
 
 <img src="assets/divider.svg" width="100%" alt="divider"/>
 
@@ -113,6 +114,10 @@ mindmap
   <img src="assets/neural-network.svg" width="90%" alt="Animated Neural Network"/>
   <br/><sub><i>Animated feed-forward neural network — signals flowing from input to output</i></sub>
 </div>
+
+### ⚡ Animated Data Flow
+
+<div align="center"><img src="assets/pipeline.svg" width="95%" alt="Animated pipeline"/></div>
 
 ### 🔄 Machine Learning Lifecycle
 
@@ -369,39 +374,14 @@ gantt
 
 <div align="center">
 
-  <!-- Account stats & top languages -->
-  <table border="0">
-    <tr>
-      <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=nibrasnaourasdaboul&show_icons=true&theme=synthwave&hide_border=true&include_all_commits=true&count_private=true" width="100%" alt="GitHub Stats"/>
-      </td>
-      <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api/top-languages/?username=nibrasnaourasdaboul&layout=compact&theme=synthwave&hide_border=true&hide=html,css" width="100%" alt="Top Languages"/>
-      </td>
-    </tr>
-  </table>
+<table border="0"><tr>
+<td width="50%"><img src="assets/stats.svg" width="100%" alt="GitHub Stats"/></td>
+<td width="50%"><img src="assets/languages.svg" width="100%" alt="Top Languages"/></td>
+</tr></table>
 
-  <br/>
+<img src="assets/trophies.svg" width="95%" alt="GitHub Trophies"/>
 
-  <!-- Daily Streak -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nibrasnaourasdaboul&theme=synthwave&hide_border=true" width="90%" alt="GitHub Streak"/>
-
-  <br/><br/>
-
-  <!-- Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=nibrasnaourasdaboul&theme=onedark&no-frame=true&no-bg=true&margin-w=10&column=7" width="95%" alt="GitHub Trophies"/>
-
-  <br/><br/>
-
-  <!-- Contribution Activity Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nibrasnaourasdaboul&bg_color=0f172a&color=a78bfa&line=7c3aed&point=22d3ee&area=true&hide_border=true" width="95%" alt="Activity Graph"/>
-
-  <br/><br/>
-
-  <!-- Dana's Stats: replace DANA_USERNAME with her GitHub username, then uncomment -->
-  <!--
-  <img src="https://github-readme-stats.vercel.app/api?username=DANA_USERNAME&show_icons=true&theme=synthwave&hide_border=true&include_all_commits=true&count_private=true" width="48%" alt="Dana GitHub Stats"/>
-  -->
+<img src="assets/activity.svg" width="95%" alt="Activity Graph"/>
 
 </div>
 
@@ -434,6 +414,5 @@ gantt
   <br/><br/>
 
   <!-- Closing Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:311b92,50:1e1b4b,100:0f172a&height=140&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
+  <img src="assets/divider.svg" width="100%" alt="Footer Banner"/>
 </div>
-
